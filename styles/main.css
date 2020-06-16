@@ -14,11 +14,20 @@ li {
   margin: 0;
   padding: 0; }
 
+ul,
+li {
+  list-style: none;
+  list-style-type: none; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-#largeImg {
+.gallery {
+  width: 750px;
+  margin: 20px auto; }
+
+.gallery__large-img {
   width: 100%; }
 
 .gallery__list {
@@ -28,7 +37,12 @@ li {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.gallery__thumb:hover {
-  border: 3px solid lightgrey; }
+.gallery__thumb {
+  width: 150px; }
+
+.gallery__thumb,
+.gallery__large-img {
+  padding: 5px;
+  border: 1px solid lightgrey; }
 
 /*# sourceMappingURL=main.css.map */
